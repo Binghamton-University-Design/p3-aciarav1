@@ -1,31 +1,108 @@
 /*stylesheet*/
 
 body {
-	margin: 0;
-}
-
-.wrapper {
-	margin: 0 auto;
-	max-width: 1200px;
-}
-
-#masthead {
-	background-color: #b6b6b6;
-}
-
-#nav {
-	background-color:;
-}
-
-#logo{
-	padding-top: 2em;
+	margin: 0;	
+	background: white;
+	color: olive;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 200;
 
 }
 
-#logo a {
-	color: var(--body--color);
+h1, h2, h3, h4, p {
+	margin-top: 300;
+	margin-bottom: 1em;
+}
+
+h1, h2 {
+	font-weight: 700;
+}
+
+#wrapper {
+	margin: 2em auto;
+	max-width: 2500px;
+}
+
+#main {
+	background-image: url("../images/90s_background.png");
+	background-size: 100%;
+	margin: 1em;
+	padding: 1em;
+}
+
+#sidebar { float:left; width: 150px; min-height:400px;
+	background: transparent;
+}
+
+
+.item img {
+	margin-bottom: 2em;
+}
+
+#content {
+	
+}
+
+#nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+#nav li {
+	margin-bottom: 1em;
+	
+}
+#nav li a: hover {
+	color: white;
 	text-decoration: none;
+}
+
+.quote-holder {
+	height: 40vh;
+	background: transparent;
 	display: flex;
 	align-items: center;
-	width: 30%;
+	justify-content: center;
+	padding: 0 3em;
 }
+
+.quote {
+	font-size: 4em;
+	font-family: 'Roboto Mono', monospace; 
+}
+
+#exquisite img {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+#exquisite .grid {
+	grid-gap: 0;
+}
+
+@media (max-width: 699px) {
+
+	#wrapper {
+		margin: 0em auto;
+	}
+
+	#main {
+		margin: 0em;
+		padding: 0em;
+	}
+
+
+	#nav ul {
+		display: flex;
+		justify-content: space-between;
+		
+}
+
+	#nav li {
+		display: inline;
+		padding: .25em;
+		background: white;
+		margin-bottom: 0;
+		
+	}
