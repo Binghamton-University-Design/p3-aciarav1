@@ -2,7 +2,10 @@
 
 body {
 	margin: 0;	
-	background: transparent;
+	background-image: url('images/90s_background.png');
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center;
 	color: black;
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 200;
@@ -39,8 +42,39 @@ h1, h2 {
 	margin-bottom: 2em;
 }
 
-#content {
-	
+	/* Container holding the image and the text */
+.container1 {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+/* Centered text */
+.centered1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(20%, 100%);
+}
+
+	/* Container holding the image and the text */
+.container2 {
+  position: relative;
+  top:-50%;
+  left:20%;
+  text-align: left;
+  color: black;
+}
+
+/* Centered text */
+.centered2 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(110%, 50%);
+}
+
+#content {	
 }
 
 #nav ul {
@@ -72,14 +106,6 @@ h1, h2 {
 	font-family: 'Roboto Mono', monospace; 
 }
 
-#exquisite img {
-	margin-bottom: 0;
-	width: 100%;
-}
-
-#exquisite .grid {
-	grid-gap: 0;
-}
 
 @media (max-width: 699px) {
 
